@@ -20,9 +20,9 @@ build:
 
 requirements:
   build:
-    # - nodejs >=8.2.1
+    - nodejs >=8.2.1
   run:
-    # - nodejs >=8.2.1
+    - nodejs >=8.2.1
 
 about:
   home: https://github.com/sci-bots/microdrop-3.0
