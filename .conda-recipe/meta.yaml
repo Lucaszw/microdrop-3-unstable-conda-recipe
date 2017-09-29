@@ -3,19 +3,13 @@
 source:
   git_url: ../
 
-{% if "GIT_DESCRIBE_NUMBER" not in environ %}
-{% set VERSION_NUMBER = "0+unknown"  %}
-{% elif GIT_DESCRIBE_NUMBER > '0'  %}
-{% set VERSION_NUMBER = GIT_DESCRIBE_TAG[1:] + ".post" + GIT_DESCRIBE_NUMBER %}
-{% else  %}
-{% set VERSION_NUMBER = GIT_DESCRIBE_TAG[1:] %}
-{% endif %}
-
 package:
   name: microdrop-3
-  version: {{ VERSION_NUMBER }}
+  version: {{ MICRODROP_VERSION }}
 
 build:
+  script_env:
+    MICRODROP_VERSION
   number: 0
 
 requirements:
