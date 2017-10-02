@@ -4,7 +4,7 @@ source:
   git_url: ../
 
 package:
-  name: microdrop-3
+  name: microdrop-3-unstable
   version: {{ MICRODROP_VERSION }}
 
 build:
